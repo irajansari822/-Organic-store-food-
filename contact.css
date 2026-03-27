@@ -1,0 +1,360 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.fixed-circle {
+    width: 65px;
+    height: 65px;
+    background: #41c252;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  /* Basket icon */
+  .fixed-circle svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+  }
+
+  /* Counter badge */
+  .fixed-circle-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #41c252;
+    color: black;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .logo{
+    height: 20vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 40px 30px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: #298035;
+}
+
+.icon {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+/* .icon a{
+    text-decoration: none;
+    color: #41c252;
+} */
+
+.icon p {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #41c252;
+    font-weight: 600;
+}
+
+.icon p a{
+    text-decoration: none;
+    color: #41c252;
+}
+
+.icon i {
+    font-size: 18px;
+    margin: 0 8px;
+    color: black;
+}
+
+.icon i a{
+    text-decoration: none;
+}
+
+.icon .cart {
+    color: black;
+}
+
+
+.icon .counter {
+    width: 20px;
+    height: 20px;
+    background-color: #41c252;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 104px;
+    bottom: 55px;
+    /* top: 20px; */
+}
+
+
+header{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(247, 247, 247);
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    padding: 6% 5% 0% 5%;
+    text-align: center;
+    font-size: 60px;
+}
+
+.parent{
+    margin: 7% 10% 0%;
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 12px 2px rgb(78, 78, 78);
+    padding: 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.parent img{
+    position: absolute;
+    left: 40%;
+    bottom: 85%;
+}
+.child{
+    width: 30%;
+    height: 25vh;
+    background-color: #fcfafa;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.child:hover{
+    transition: 0.6s;
+    transform: translateY(-20px);
+}
+
+.child i{
+    color: #41c252;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.child p{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    font-weight: 9;
+}
+
+.faq-container{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    margin-top: 3%;
+}
+
+.faq-container h2{
+    font-size: 37px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.faq-container img{
+    margin: 2% 45% 0% 45%;
+}
+
+.faq{
+    width: 35%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.faq-item{
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item input{
+    display: none;
+}
+
+.faq-question{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 15px;
+}
+
+.faq-item input:checked ~ .faq-answer {
+  max-height: 100px;
+  padding: 15px;
+}
+
+.icon {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.faq-item input:checked + .faq-question .icon {
+  transform: rotate(90deg);
+}
+
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+    display: flex;
+}
+
+.img {
+    width: 15%;
+    margin: 70px 90px;
+}
+
+.img p {
+    line-height: 25px;
+    font-size: 19px;
+    margin-top: 16%;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer-material {
+    width: 70%;
+    height: 40vh;
+    margin-top: 5%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-material-card {
+    color: white;
+    margin-top: 0%;
+    width: 35%;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer-material-card h1 {
+    margin-bottom: 20px;
+}
+
+.footer-material-card p {
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-material-card a {
+    font-weight: 500;
+    color: rgb(179, 172, 172);
+    text-decoration: none;
+}
+
+.footer-material-card a:hover {
+    font-size: 16px;
+    color: white;
+}
+
+.footer2 {
+    width: 100%;
+    height: 15vh;
+    color: white;
+    background-color: rgb(66, 61, 61);
+}
+
+.last-section {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+    height: 15vh;
+    background-color: black;
+}
+
+.text h3 {
+    margin: 5%;
+    font-size: 29px;
+}
+
+.footer-icon-section {
+    width: 50%;
+    height: 15vh;
+    background-color: black;
+
+}
+
+.footer-icon {
+    font-size: 25px;
+    text-align: right;
+    margin: 6%;
+}
+
+.footer-icon a{
+    color: white;
+}
+

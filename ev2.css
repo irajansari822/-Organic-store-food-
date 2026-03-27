@@ -1,0 +1,43 @@
+body{
+  background:#bfbfbf;
+  margin:0;
+  font-family: Georgia, serif;
+}
+
+/* container */
+.products{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 div per row */
+  gap:0;
+  border-top:3px solid black;
+  border-left:3px solid black;
+}
+
+/* card */
+.card{
+  background:#8fa98f;
+  text-align:center;
+  padding:20px;
+  border-right:3px solid black;
+  border-bottom:3px solid black;
+}
+
+.card img{
+  width:70%;
+  height:200px;
+  object-fit:contain;
+  background:white;
+}
+
+.category{
+  margin-top:10px;
+}
+
+.title{
+  font-weight:bold;
+  font-size:18px;
+}
+
+.price{
+  margin-top:5px;
+}
